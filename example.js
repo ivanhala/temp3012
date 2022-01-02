@@ -11,7 +11,8 @@ jQuery(document).on( 'wbk_on_form_rendered', function(){
                   jQuery('#wbk-book-quantity').val(2); 
              } else {
                   jQuery('#wbk-book-quantity').val(1);                
-             } 
+             }
+             jQuery('#wbk-book-quantity').trigger('change');
         }
     });
   
